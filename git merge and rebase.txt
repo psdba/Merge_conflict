@@ -1,0 +1,20 @@
+What is a Git Merge Conflict?
+A git merge conflict is an event that takes place when Git is unable to automatically resolve differences in code between two commits. Git can merge the changes automatically only if the commits are on different lines or branches.
+
+In Git, conflicts typically occur when multiple users or branches attempt to modify the same part of a file simultaneously. There are several types of conflicts that can arise:
+
+1. Content Conflict: This is the most common type of conflict. It occurs when two users or branches make changes to the same part of a file, resulting in conflicting content. Git cannot automatically determine which change is correct, so manual resolution is required.
+
+2. Add/Add Conflict: This conflict occurs when two users or branches try to add a new file with the same name. Git doesn't know which file to keep, so the conflict arises.
+
+3. Delete/Modify Conflict: If one user deletes a file or a line of code while another user simultaneously makes modifications to that same file or line, a conflict can occur.
+
+4. Rename Conflict: When one user renames a file, and another user modifies that file under its old name, Git may not be able to automatically resolve the conflict. Manual intervention is necessary.
+
+5. Tree Conflict: This conflict pertains to issues related to the directory structure. For instance, if one user moves a file to a new directory while another user modifies that same file in its original location, a tree conflict arises.
+
+6. Binary Conflict: Binary files, such as images or compiled executables, can produce conflicts when users attempt to modify them simultaneously. Git can't automatically merge binary files, so manual resolution is needed.
+
+7. Whitespace Conflict: Sometimes, conflicts can occur due to differences in whitespace, such as tabs versus spaces or line-ending characters (e.g., CRLF vs. LF). These conflicts might not affect code functionality but can still require manual resolution.
+
+Understanding these conflict types is essential for effective collaboration in Git-based projects. Resolving conflicts is a critical aspect of version control to maintain code integrity and keep the development process running smoothly.
